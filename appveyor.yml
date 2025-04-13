@@ -2,7 +2,6 @@ version: '{branch}-{build}'
 image: Visual Studio 2015
 skip_non_tags: false
 platform:
-- x86
 - x64
 init:
 - cmd: IF %APPVEYOR_REPO_TAG%==true appveyor UpdateBuild -Version %APPVEYOR_REPO_TAG_NAME%-%APPVEYOR_BUILD_NUMBER%
